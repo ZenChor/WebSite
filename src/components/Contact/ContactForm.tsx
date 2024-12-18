@@ -2,7 +2,7 @@ import React from 'react';
 import FormInput from './FormInput';
 import { theme } from '../styles/theme';
 
-const ContactForm = () => (
+/*
   <form className="space-y-6">
     <FormInput label="Name" type="text" />
     <FormInput label="Email" type="email" />
@@ -20,6 +20,20 @@ const ContactForm = () => (
       </button>
     </div>
   </form>
+  */
+const ContactForm = () => (
+
+    <div className="text-center">
+      <a className="px-6 py-2 rounded-lg font-semibold transition-all duration-200 hover:scale-105"
+        style={{
+          background: theme.gradients.blueToGreen,
+          color: theme.background
+        }}
+        href="https://www.reddit.com/r/Zenchor/" target="_blank" rel="noopener noreferrer">
+        Visit r/Zenchor on Reddit
+      </a>
+    </div>
+
 );
 
 export default ContactForm;
