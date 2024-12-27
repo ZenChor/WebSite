@@ -5,6 +5,8 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
+    "build:github": "DEPLOY_ENV=github next build",
+    "build:custom": "DEPLOY_ENV=custom-domain next build",
     "start": "next start",
     "lint": "next lint"
   },
