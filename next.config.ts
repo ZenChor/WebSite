@@ -25,7 +25,7 @@ const getAssetPath = (env: Environment) => {
     case 'github':
       return '/WebSite';
     case 'custom-domain':
-      return '/WebSite';
+      return '';
     default:
       return '';
   }
