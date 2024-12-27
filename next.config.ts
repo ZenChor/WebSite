@@ -9,10 +9,23 @@ const getBasePath = (env: Environment) => {
   switch (env) {
     case 'local':
       return '';
-    case 'github':
+    case 'github': // Not using a custom domain
       return '/WebSite';
     case 'custom-domain':
       return '';
+    default:
+      return '';
+  }
+};
+
+const getAssetPath = (env: Environment) => {
+  switch (env) {
+    case 'local':
+      return '';
+    case 'github':
+      return '/WebSite';
+    case 'custom-domain':
+      return '/WebSite';
     default:
       return '';
   }
@@ -24,7 +37,7 @@ const nextConfig = {
     unoptimized: true, // Required for static export
   },
   basePath: getBasePath(DEPLOY_ENV),
-  assetPrefix: getBasePath(DEPLOY_ENV),
+  assetPrefix: getAssetPath(DEPLOY_ENV),
 }
 
 
