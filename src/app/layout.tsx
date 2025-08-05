@@ -1,9 +1,10 @@
-import './globals.css'
+// src/app/layout.tsx
 import type { Metadata } from 'next'
+import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Landing Page',
-  description: 'Social Smart Music Playlist Generator',
+  title: 'Image Evolution',
+  description: 'Image evolution using genetic algorithms',
 }
 
 export default function RootLayout({

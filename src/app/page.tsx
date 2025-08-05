@@ -1,5 +1,11 @@
-import LandingPage from '../components/LandingPage'
+// src/app/page.tsx
+import ImageEvolver from '@/components/ImageEvolver';
 
 export default function Home() {
-  return <LandingPage />
+  return (
+    <main className="p-8">
+      <h1 className="text-4xl font-bold mb-8">Image Evolution</h1>
+      <ImageEvolver />
+    </main>
+  );
 }
